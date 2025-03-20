@@ -9,4 +9,7 @@ web:
 ![alt text](image.png)
 
 mob:
+
+<div>
 ![alt text](image-1.png)
+</div>

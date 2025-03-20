@@ -5,6 +5,8 @@ Node: 22
 
 the app is live on: https://app-three-dun.vercel.app
 
+web: 
 ![alt text](image.png)
 
-
+mob:
+![alt text](image-1.png)

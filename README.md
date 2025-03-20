@@ -11,7 +11,7 @@ the app is live on: https://app-three-dun.vercel.app
 ## Note:  
 For the requirement **"This record should persist even if the website is reloaded,"** I have utilized **localStorage** because I was unsure whether using a database (Firebase/MongoDB) was permitted for this task.
 
-## $To Run Angular on local: 
+## To Run Angular on local: 
 simply run npm i and then <b>npm start </b>
 
 ## To Start backend (api): </b> 

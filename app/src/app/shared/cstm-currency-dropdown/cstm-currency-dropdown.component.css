@@ -1,0 +1,53 @@
+
+:host ::ng-deep .mdc-text-field--outlined .mdc-notched-outline .mdc-notched-outline__leading{
+  border: none;
+}
+
+:host ::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mat-mdc-notch-piece{
+  border: none;
+}
+
+:host ::ng-deep .mat-mdc-text-field-wrapper {
+  width: 100%;
+  z-index: 0;
+  border: 1px solid #DDDDDE;
+  border-radius: 20px;
+  padding: 0px 0px 0px 15px;
+}
+
+:host ::ng-deep .mat-mdc-form-field-subscript-wrapper {
+  display: none;
+}
+
+ .mat-mdc-option {
+  background-color: white !important;
+}
+
+:host ::ng-deep .mat-mdc-form-field-flex{
+  height: 46px;
+  display: flex;
+  align-items: center;
+}
+
+.currency-symbol{
+  color: green;
+}
+
+.cstm-input{
+  font-size: 15px !important;
+  color: #727272;
+}
+
+.cstm-input:not(::placeholder) {
+  color: black !important;
+}
+
+@media (max-width: 768px) {
+  :host ::ng-deep .mat-mdc-form-field {
+    flex: 1;
+    display: flex;
+  }
+}
+/* .{
+  color: black !important;
+} */

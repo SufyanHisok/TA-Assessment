@@ -1,0 +1,73 @@
+<div class="table-container">
+    <table class="offer-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>From Currency</th>
+          <th>To Currency</th>
+          <th>Amount</th>
+          <th>Converted Amount</th>
+          <th>Date</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody *ngIf="data.length > 0; else noDataTemplate">
+        <tr *ngFor="let item of data">
+          <td>{{item?.id}}</td>
+          <td>{{item?.from}}</td>
+          <td>{{item?.to}}</td>
+          <td>{{item?.amount}}</td>
+          <td><span class="convertedAmount-text">{{item?.convertedAmount | number:'1.0-2'}}</span></td>
+          <td>{{item?.timestamp}}</td>
+          <td><mat-icon class="btn-delete" (click)="onDelete(item.id)">delete</mat-icon></td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <ng-template #noDataTemplate>
+        <tbody>
+          <tr>
+            <td colspan="7" class="no-data">
+            
+              <img class="no-result-img" src="./assets/no-result.svg" alt="No Data" />
+              <p style="text-align: center;">No data available</p>
+            </td>
+          </tr>
+        </tbody>
+      </ng-template>
+
+
+    <!-- mob code -->
+    <div class="mobile-view">
+        <div class="mb-3">
+            Converstion History
+        </div><hr>
+      <ng-container *ngIf="data.length > 0; else noDataTemplateMob">
+        <div class="offer-card" *ngFor="let item of data ">
+            <div class="offer-header">
+                <div class="mob-title-header">
+                    <div>ID: {{item?.id}}</div>
+                    <div class="mob-header-date">{{item?.timestamp}}</div>
+                </div>
+              <span class="status"><mat-icon class="btn-delete" (click)="onDelete(item.id)">delete</mat-icon></span>
+            </div>
+            <div class="offer-body">
+              <p><strong>From:</strong> {{item?.from}}</p>
+              <p><strong>To:</strong> {{item?.to}} </p>
+              <p><strong>Amount:</strong> {{item?.amount}}</p>
+              <p class="noBorder"><strong>Converted Amount</strong> <span class="convertedAmount-text">{{item?.convertedAmount | number:'1.0-2'}}</span></p>
+            </div>
+          </div>
+      </ng-container>
+
+      <ng-template #noDataTemplateMob>
+        <div class="no-data">
+            <img class="no-result-img" src="./assets/no-result.svg" alt="No Data" />
+            <p style="text-align: center;">No data available</p>
+        </div>
+ 
+      </ng-template>
+      
+    </div>
+  </div>
+  

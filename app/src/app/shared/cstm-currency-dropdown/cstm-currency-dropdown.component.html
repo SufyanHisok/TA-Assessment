@@ -1,0 +1,17 @@
+<mat-form-field appearance="outline">
+  <!-- <mat-label>{{ placeholder }}</mat-label> -->
+
+  <input type="text" class="cstm-input" matInput [formControl]="searchControl"  (focus)="openDropdown()" [matAutocomplete]="auto" [placeholder]="placeholder">
+  <mat-icon matSuffix>arrow_drop_down</mat-icon>
+
+  <mat-autocomplete #auto="matAutocomplete">
+    @for (currency of filteredCurrencies$ | async; track currency) {
+      <mat-option [value]="currency.code" (click)="onSelectionChange(currency.code)">
+        <span class="currency-symbol me-1">{{ currency.symbol }}</span>
+        <span class="currency-code me-1">{{ currency.code }}</span>
+        <span class="currency-name">({{ currency.name }})</span>
+      </mat-option>
+    }
+
+  </mat-autocomplete>
+</mat-form-field>

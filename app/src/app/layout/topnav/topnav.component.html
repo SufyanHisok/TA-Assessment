@@ -1,0 +1,32 @@
+<nav class="d-flex justify-content-between align-items-center topNav px-3">
+    <div class="brandName d-flex align-items-center p-2">
+
+      <div class="topBar">
+        <button class="menu-button me-2" (click)="toggleSidenav.emit()"><mat-icon style="color: black;">menu</mat-icon></button>
+      </div>
+
+      <div class="input-group search-bar">
+        <span class="input-group-text">
+          <span class="material-icons">search</span>
+        </span>
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+          
+    </div>
+
+
+
+    <div class="rightBar d-flex align-items-center gap-3 p-3">
+ 
+          <div class="desktop">
+            <app-cstm-button label="Log out" icon="logout"></app-cstm-button>
+          </div>
+
+          <div class="mob">
+            <button class="menu-button">
+              <mat-icon style="color: black;">logout</mat-icon>
+            </button>
+          </div>
+        
+    </div>
+</nav>

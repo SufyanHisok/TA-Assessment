@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* Override Angular Material's default font */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Ensure Angular Material components use Poppins */
+.mat-typography {
+  font-family: 'Poppins', sans-serif;
+}
+
+.loginBtn {
+  border-radius: 50px;
+  border-left: solid 5px;
+  border-color: #032f42;
+  transition-duration: 200ms;
+  min-width: 160px;
+  display: flex;
+  padding: 4px;
+  align-items: center;
+  justify-content: center;
+  gap: 2px
+}
+
+.loginBtn:hover {
+  background-color: #f1b3223f;
+}

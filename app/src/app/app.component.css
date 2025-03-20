@@ -1,0 +1,12 @@
+.mat-drawer-container{    
+        height: 100vh;
+        overflow: hidden !important;
+}
+.sideNav{
+        border-right: 1px solid #efefef;
+        width: 255px;
+        background-color: white !important;
+}
+
+.main-content{
+}

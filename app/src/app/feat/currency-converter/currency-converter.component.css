@@ -1,0 +1,97 @@
+.main-title{
+    color: #1d293d;
+    font-size: 18px;
+}
+
+.form-title{
+    font-size: 16px;
+}
+
+.form-desc{
+    color: #5a5b5c;
+    font-size: 12px;
+}
+
+.logoDiv{
+    background: white;
+    border: 1px solid #efefef;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logoDiv-icon{
+        font-size: 22px;
+        font-weight: 500;
+        color:black
+}
+
+.currencyDiv{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+.cstm-input{
+    border: 1px solid #DDDDDE;
+    padding: 6px 12px;
+    border-radius: 20px;
+    width: 246px;
+}
+
+.cstmButton{
+    background-color: black;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: none;
+    transition-duration: 200ms;
+}
+
+.cstmButton:hover{
+    background-color: lightgray;
+    color: black;
+}
+
+.cstmButton:disabled{
+    color: lightgray;
+    background-color: darkslategray;
+}
+
+.resultDiv{
+    border: 1px solid #DDDDDE;
+    border-radius: 12px;
+    padding: 8px 16px;
+    width: 400px;
+}
+
+@media (max-width: 768px) {
+    .cstm-input{
+        width: 100%;
+    }
+
+    .mob-100{
+        width: 100%;
+    }
+
+    .resultDiv{
+        width: 100%;
+    }
+
+    .currencyDiv{
+        flex-direction: column;
+    }
+
+    .mob-convertBtnDiv{
+        flex-direction: column;
+    }
+
+    .mob-dropdown{
+        width: 100%;
+    }
+}
